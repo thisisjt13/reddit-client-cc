@@ -37,57 +37,59 @@ src/
 ```bash
 git clone https://github.com/yourusername/reddit-client.git
 cd reddit-client
+```
 
 2.	Install dependencies:
-
+```
 npm install
-
+```
 3.	Run the project:
-
+```
 npm start
+```
+## Components
 
-Components
-
-SearchBar
+# SearchBar
 
 A search bar to search for posts in different subreddits.
 
-Post
+# Post
 
 Displays an individual post with title, image, and top comments.
 
-PostList
+# PostList
 
 Fetches and displays a list of posts from the subreddit.
 
-PostDetail
+# PostDetail
 
 Displays detailed view of a post with all comments.
 
-Redux Slice
+# Redux Slice
 
-postsSlice.js
+# postsSlice.js
 
 Contains the Redux slice for fetching and managing posts and their comments.
 
-store.js
+# store.js
 
 Configures and exports the Redux store.
 
-Styling
+# Styling
 
 Styled using styled-components for scoped and dynamic styling.
 
-Global Styles
+# Global Styles
 
 Global styles are applied using createGlobalStyle from styled-components.
 
-Component Styles
+# Component Styles
 
 Each component is styled using styled-components to encapsulate styles.
 
 ## Running the Project
 
 After setting up, you can run the project with:
-
+```
 npm start
+```
