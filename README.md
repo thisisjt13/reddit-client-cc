@@ -10,6 +10,8 @@ A minimal read-only version of Reddit using React, Redux Toolkit, React Router, 
 - Detailed view for each post with additional comments.
 
 ## Project Structure
+
+```
 src/
 ├── components/
 │   ├── Post.js
@@ -22,6 +24,7 @@ src/
 ├── App.js
 ├── index.js
 └── api.js
+```
 
 ## Getting Started
 
