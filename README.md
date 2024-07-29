@@ -1,71 +1,93 @@
-# Getting Started with Create React App
+# Reddit Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A minimal read-only version of Reddit using React, Redux Toolkit, React Router, and styled-components.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Search for posts in any subreddit.
+- Display posts with high-resolution images.
+- View top comments for each post on the main screen.
+- Detailed view for each post with additional comments.
 
-### `npm start`
+## Project Structure
+src/
+├── components/
+│   ├── Post.js
+│   ├── PostList.js
+│   ├── PostDetail.js
+│   └── SearchBar.js
+├── store/
+│   ├── postsSlice.js
+│   └── store.js
+├── App.js
+├── index.js
+└── api.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js
+- npm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/yourusername/reddit-client.git
+cd reddit-client
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.	Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
+3.	Run the project:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+SearchBar
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A search bar to search for posts in different subreddits.
 
-## Learn More
+Post
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Displays an individual post with title, image, and top comments.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+PostList
 
-### Code Splitting
+Fetches and displays a list of posts from the subreddit.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+PostDetail
 
-### Analyzing the Bundle Size
+Displays detailed view of a post with all comments.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Redux Slice
 
-### Making a Progressive Web App
+postsSlice.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contains the Redux slice for fetching and managing posts and their comments.
 
-### Advanced Configuration
+store.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Configures and exports the Redux store.
 
-### Deployment
+Styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Styled using styled-components for scoped and dynamic styling.
 
-### `npm run build` fails to minify
+Global Styles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# reddit-client-cc
+Global styles are applied using createGlobalStyle from styled-components.
+
+Component Styles
+
+Each component is styled using styled-components to encapsulate styles.
+
+## Running the Project
+
+After setting up, you can run the project with:
+
+npm start
